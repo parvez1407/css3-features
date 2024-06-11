@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Variable</title>
+    <style>
+      :root {
+        --primary-color: tomato;
+        --secondary-color: purple;
+        --font-size: 20px;
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+      h5 {
+        background-color: var(--primary-color);
+      }
+      .box {
+        border: 2px solid var(--secondary-color);
+      }
+      .box p {
+        color: var(--primary-color);
+        font-size: var(--font-size);
+      }
+    </style>
   </head>
   <body>
     <h1>My Custom Property</h1>
